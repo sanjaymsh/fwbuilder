@@ -12,18 +12,42 @@ cache:
 matrix:
   include:
     - os: linux
+      arch: amd64
       env:
         - VM=ubuntu
         - TAG=16.04
     - os: linux
+      arch: amd64
       env:
         - VM=ubuntu
         - TAG=18.04
     - os: linux
+      arch: amd64
       env:
         - VM=ubuntu
         - TAG=20.04
     - os: linux
+      arch: amd64
+      env: 
+        - VM=mxe
+        - TAG=qt-5.12
+    - os: linux
+      arch: ppc64le
+      env:
+        - VM=ubuntu
+        - TAG=16.04
+    - os: linux
+      arch: ppc64le
+      env:
+        - VM=ubuntu
+        - TAG=18.04
+    - os: linux
+      arch: ppc64le
+      env:
+        - VM=ubuntu
+        - TAG=20.04
+    - os: linux
+      arch: ppc64le
       env: 
         - VM=mxe
         - TAG=qt-5.12
